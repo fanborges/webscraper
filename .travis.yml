@@ -9,7 +9,7 @@ python:
   #~ - pip install codecov
 
 script:
-  - run tests.py
+  - python3 tests.py
 
 #~ after_success:
   #~ - codecov
