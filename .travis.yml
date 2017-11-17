@@ -5,11 +5,13 @@ language: python
 python:
   - 3.5.2
 
+# command to install dependencies  
+install:
+  - pip install -r requirements.txt
+
 #~ install:
   #~ - pip install codecov
-
+    
 script:
-  - python3 tests.py
+  - python testscraper.py -v
 
-#~ after_success:
-  #~ - codecov
