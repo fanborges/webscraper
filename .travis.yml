@@ -9,9 +9,7 @@ python:
 install:
   - pip install -r requirements.txt
 
-#~ install:
-  #~ - pip install codecov
-    
+
 script:
   - python testscraper.py -v
 
