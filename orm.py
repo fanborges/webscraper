@@ -4,6 +4,8 @@ from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.sql import select
 
 
+#~ Archivo de creación de base de datos, tablas e inserts a la misma
+
 BD = declarative_base()
 
 class User(BD):

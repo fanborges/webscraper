@@ -1,0 +1,6 @@
+__pycache__/
+htmlcov/
+*.db
+*.coverage
+*.dia
+prueba.py

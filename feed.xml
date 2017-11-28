@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">How to list containers in Docker - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds/question/16840409" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/q/16840409" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2017-11-27T13:51:24Z</updated>
+    <id>https://stackoverflow.com/feeds/question/16840409</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/16840409</id>
+        <re:rank scheme="https://stackoverflow.com">537</re:rank>
+        <title type="text">How to list containers in Docker</title>
+            <category scheme="https://stackoverflow.com/tags" term="docker" />
+        <author>
+            <name>w00t</name>
+            <uri>https://stackoverflow.com/users/124416</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker" />
+        <published>2013-05-30T15:41:46Z</published>
+        <updated>2017-11-06T19:52:26Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;There&#39;s a command to list images, &lt;code&gt;docker images&lt;/code&gt;, but there doesn&#39;t seem to be a corresponding &lt;code&gt;docker containers&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Other than becoming root and looking into &lt;code&gt;/var/lib/docker&lt;/code&gt; there doesn&#39;t seem a way to do that. Am I missing something? Is that something one isn&#39;t supposed to do?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/questions/16840409/-/16842203#16842203</id>
+        <re:rank scheme="https://stackoverflow.com">880</re:rank>
+        <title type="text">Answer by vieux for How to list containers in Docker</title>
+        <author>
+            <name>vieux</name>
+            <uri>https://stackoverflow.com/users/404289</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker/16842203#16842203" />
+        <published>2013-05-30T17:15:11Z</published>
+        <updated>2017-11-06T19:52:26Z</updated>
+        <summary type="html">&lt;p&gt;To show only &lt;strong&gt;running containers&lt;/strong&gt; use the given command: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To show &lt;strong&gt;all containers&lt;/strong&gt; use the given command: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To show the &lt;strong&gt;latest created container&lt;/strong&gt; (includes all states) use the given command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -l
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To show &lt;strong&gt;n last created containers&lt;/strong&gt; (includes all states) use the given command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -n=-1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To display &lt;strong&gt;total file sizes&lt;/strong&gt; use the given command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The content presented above is from &lt;a href=&quot;https://docs.docker.com/v1.11/engine/reference/commandline/ps/&quot; rel=&quot;noreferrer&quot;&gt;docker.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In The New Version Of Docker, Commands Are Update, Some Management Commands Are Added:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker container ls
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Is Used to list all the running containers.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker container ls -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Is used to list all the containers created irrespective of its state.
+Here Container is the management command.&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>https://stackoverflow.com/questions/16840409/-/17945838#17945838</id>
+        <re:rank scheme="https://stackoverflow.com">23</re:rank>
+        <title type="text">Answer by qkrijger for How to list containers in Docker</title>
+        <author>
+            <name>qkrijger</name>
+            <uri>https://stackoverflow.com/users/1449361</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker/17945838#17945838" />
+        <published>2013-07-30T11:29:19Z</published>
+        <updated>2013-07-30T11:29:19Z</updated>
+        <summary type="html">&lt;p&gt;Note that some time ago there was an update to this command. It will not show the container size by default (since this is rather expensive for many running containers). Use &lt;code&gt;docker ps -s&lt;/code&gt; to display container size as well. &lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>https://stackoverflow.com/questions/16840409/-/27459078#27459078</id>
+        <re:rank scheme="https://stackoverflow.com">15</re:rank>
+        <title type="text">Answer by mrh for How to list containers in Docker</title>
+        <author>
+            <name>mrh</name>
+            <uri>https://stackoverflow.com/users/3788457</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker/27459078#27459078" />
+        <published>2014-12-13T13:01:50Z</published>
+        <updated>2014-12-13T13:01:50Z</updated>
+        <summary type="html">&lt;p&gt;docker ps -s will show the size of running containers only.&lt;/p&gt;
+
+&lt;p&gt;To check the size of all containers use &lt;code&gt;docker ps -as&lt;/code&gt;&lt;/p&gt;
+</summary>
+    </entry>    <entry>
+        <id>https://stackoverflow.com/questions/16840409/-/30070651#30070651</id>
+        <re:rank scheme="https://stackoverflow.com">11</re:rank>
+        <title type="text">Answer by VonC for How to list containers in Docker</title>
+        <author>
+            <name>VonC</name>
+            <uri>https://stackoverflow.com/users/6309</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker/30070651#30070651" />
+        <published>2015-05-06T07:50:32Z</published>
+        <updated>2015-05-06T07:50:32Z</updated>
+        <summary type="html">&lt;p&gt;To list only the containers SHA1:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -aq --no-trunc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That way, you can use the list of &lt;em&gt;all&lt;/em&gt; containers for other commands (which accept &lt;em&gt;multiple&lt;/em&gt; container ids as parameters).&lt;/p&gt;
+
+&lt;p&gt;For example, to list &lt;em&gt;only&lt;/em&gt; the &lt;em&gt;name&lt;/em&gt; of all containers (since &lt;code&gt;docker ps&lt;/code&gt; list only their names with other information):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker inspect --format=&#39;{{.Name}}&#39; $(sudo docker ps -aq --no-trunc)
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+    </entry>    <entry>
+        <id>https://stackoverflow.com/questions/16840409/-/34954814#34954814</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Answer by vezenkov for How to list containers in Docker</title>
+        <author>
+            <name>vezenkov</name>
+            <uri>https://stackoverflow.com/users/1025264</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker/34954814#34954814" />
+        <published>2016-01-22T19:52:17Z</published>
+        <updated>2017-03-16T19:43:41Z</updated>
+        <summary type="html">&lt;p&gt;I got the error message &lt;code&gt;Cannot connect to the Docker daemon.&lt;/code&gt; I forgot I am running the daemon as root and needed &lt;code&gt;sudo&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo docker ps
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+    </entry>    <entry>
+        <id>https://stackoverflow.com/questions/16840409/-/36565322#36565322</id>
+        <re:rank scheme="https://stackoverflow.com">92</re:rank>
+        <title type="text">Answer by kramfs for How to list containers in Docker</title>
+        <author>
+            <name>kramfs</name>
+            <uri>https://stackoverflow.com/users/1400202</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker/36565322#36565322" />
+        <published>2016-04-12T06:37:32Z</published>
+        <updated>2016-04-12T06:37:32Z</updated>
+        <summary type="html">&lt;p&gt;To list all running and stopped containers&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To list all running containers (just stating the obvious and also example use of -f filtering option)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -a -f status=running
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To list all running and stopped containers, showing only their container id&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -aq
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To remove all containers that are NOT running&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker rm `docker ps -aq -f status=exited`
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+    </entry>    <entry>
+        <id>https://stackoverflow.com/questions/16840409/-/44741100#44741100</id>
+        <re:rank scheme="https://stackoverflow.com">7</re:rank>
+        <title type="text">Answer by tgogos for How to list containers in Docker</title>
+        <author>
+            <name>tgogos</name>
+            <uri>https://stackoverflow.com/users/1561148</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker/44741100#44741100" />
+        <published>2017-06-24T21:22:57Z</published>
+        <updated>2017-07-14T07:44:13Z</updated>
+        <summary type="html">&lt;p&gt;There are also the following options:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker container ls
+docker container ls -a
+# --all, -a
+# Show all containers (default shows just running)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since &lt;a href=&quot;https://github.com/docker/docker-ce/blob/master/CHANGELOG.md#1130-2017-01-18&quot; rel=&quot;noreferrer&quot;&gt;1.13.0 (2017-01-18)&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Restructure CLI commands by adding &lt;code&gt;docker image&lt;/code&gt; and &lt;code&gt;docker container&lt;/code&gt; commands for more consistency &lt;a href=&quot;https://github.com/moby/moby/pull/26025&quot; rel=&quot;noreferrer&quot;&gt;#26025&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
+    </entry>    <entry>
+        <id>https://stackoverflow.com/questions/16840409/-/45943539#45943539</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Answer by Nobita for How to list containers in Docker</title>
+        <author>
+            <name>Nobita</name>
+            <uri>https://stackoverflow.com/users/6686499</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/16840409/how-to-list-containers-in-docker/45943539#45943539" />
+        <published>2017-08-29T15:56:36Z</published>
+        <updated>2017-08-29T16:18:21Z</updated>
+        <summary type="html">&lt;pre&gt;&lt;code&gt;docker ps [OPTIONS]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Following command will show only running containers by default.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To see all containers: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For showing the latest created container:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker ps -l
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+    </entry></feed>
